@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>雪线之上 | 高山人文纪实纪录片</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#222;line-height:1.7}
+
+/* 侧边固定导航 */
+.sidebar{position:fixed;left:0;top:0;width:220px;height:100vh;background:#fff;border-right:1px solid #e6ebf0;padding:40px 30px}
+.logo{font-size:22px;font-weight:500;color:#2c4a68;margin-bottom:50px;letter-spacing:2px}
+.nav-item{display:block;margin:18px 0;color:#555;text-decoration:none;font-size:15px;transition:0.2s}
+.nav-item.active{color:#2c4a68;border-left:3px solid #2c4a68;padding-left:12px}
+.nav-item:hover{color:#2c4a68}
+
+/* 主内容区 */
+.main{margin-left:220px;padding:60px 80px;max-width:1200px}
+.page{display:none}
+.page.active{display:block}
+
+h1{font-size:36px;color:#2c4a68;margin-bottom:25px}
+.desc{font-size:16px;color:#666;margin-bottom:30px;max-width:800px}
+</style>
+</head>
+<body>
+
+<!-- 侧边导航栏 -->
+<div class="sidebar">
+    <div class="logo">雪线之上</div>
+    首页概览
+    导演阐述
+    影片介绍
+    主创团队
+    合作投递
+</div>
+
+<!-- 主内容区域 -->
+<div class="main">
+    <!-- 首页 -->
+    <div id="home" class="page active">
+        <h1>雪线之上 · Above The Snow Line</h1>
+        <p class="desc">高海拔高山人文纪实长片，聚焦雪山女性向导群体，国内稀缺垂直纪实题材，专注高原山野真实人文记录。</p >
+    </div>
+
+    <!-- 导演页面 对应 #director -->
+    <div id="director" class="page">
+        <h1>导演阐述</h1>
+        <p class="desc">长期深耕高海拔野外纪实拍摄，以克制、客观、写实的镜头语言，记录雪域高原不被大众熟知的真实生活与山野坚守。不刻意戏剧化，忠于自然、忠于人本、忠于雪山本身。</p >
+    </div>
+
+    <!-- 影片介绍 -->
+    <div id="intro" class="page">
+        <h1>影片简介</h1>
+        <p class="desc">横跨多座高海拔雪山实地跟拍，记录高原女性向导的日常、生存、信仰与成长，用影像留存雪线之下最质朴动人的人间百态。</p >
+    </div>
+
+    <!-- 主创团队 -->
+    <div id="team" class="page">
+        <h1>主创团队</h1>
+        <p class="desc">纪录片导演 / 高山摄影 / 野外摄制组 / 高原实地统筹 / 合规法务对接 / 影展投递发行</p >
+    </div>
+
+    <!-- 合作投递 -->
+    <div id="contact" class="page">
+        <h1>合作与项目投递</h1>
+        <p class="desc">接受影展申报、发行合作、品牌联动、项目创投洽谈，长期开放正规商务对接渠道。</p >
+    </div>
+</div>
+
+<script>
+// 页面切换 + 地址栏带 #锚点，和你要的网址格式完全一致
+function switchPage(id){
+    document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'))
+    document.querySelectorAll('.nav-item').forEach(n=>n.classList.remove('active'))
+    document.getElementById(id).classList.add('active')
+    event.target.classList.add('active')
+    history.pushState(null,null,'#'+id)
+}
+
+// 打开网页自动读取地址栏锚点，自动跳转对应页面
+window.onload = function(){
+    let hash = location.hash.replace('#','') || 'home'
+    switchPage(hash)
+}
+</script>
+
+</body>
+</html>

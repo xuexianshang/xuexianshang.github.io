@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>雪线之上 Above the Snow Line — 人文纪实纪录片</title>
+<meta name="description" content="国内首部聚焦未成年女性高山向导姐妹的纪实影像。19岁高三女生罗琴与17岁妹妹罗莹，在雪山与教室之间，记录一个向导家庭在时代缝隙中的真实选择。">
+<meta property="og:title" content="雪线之上 Above the Snow Line — 人文纪实纪录片">
+<meta property="og:description" content="30分钟人文纪实短片，记录一对纳西族姐妹在雪山与教室之间的真实选择。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://xuexianshang.com">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;font-size:16px}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei","Helvetica Neue",Arial,sans-serif;background:#FAFAFA;color:#333;line-height:1.8;-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{color:#2A5278;text-decoration:none;transition:color .3s}
+a:hover{color:#1a3650}
+:root{--white:#FAFAFA;--glacier:#D6E4F0;--tibetan:#2A5278;--text:#333333;--text-light:#666;--border:#E8EDF2;--card-bg:#FFFFFF}
+h1,h2,h3{font-weight:400;color:var(--tibetan);letter-spacing:.05em}
+h1{font-size:clamp(2.4rem,6vw,4.2rem);line-height:1.2}
+h2{font-size:clamp(1.6rem,3.5vw,2.4rem);margin-bottom:2rem}
+h3{font-size:clamp(1.1rem,2vw,1.4rem);margin-bottom:.8rem}
+.section-sub{font-size:.9rem;color:var(--text-light);letter-spacing:.15em;margin-bottom:.5rem;text-transform:uppercase}
+p{font-size:clamp(.95rem,1.2vw,1.05rem);color:var(--text);line-height:1.9;max-width:70ch}
+.small{font-size:.85rem;color:var(--text-light)}
+.section{padding:clamp(3rem,8vw,6rem) clamp(1.2rem,5vw,4rem);max-width:1200px;margin:0 auto}
+.section-header{text-align:center;margin-bottom:3.5rem}
+.section-header p{max-width:600px;margin:.8rem auto 0}
+.section-divider{width:60px;height:2px;background:var(--glacier);margin:1.5rem auto}
+.section-full{width:100%;background:var(--card-bg)}
+.section-full .section{background:var(--card-bg)}
+.grid-2{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:clamp(1.5rem,3vw,3rem)}
+.grid-3{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:clamp(1.2rem,2.5vw,2.5rem)}
+.grid-4{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.5rem}
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:2rem;position:relative;background:linear-gradient(180deg,#FAFAFA 0%,#F4F8FC 50%,#FAFAFA 100%)}
+.hero::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,transparent,var(--glacier),var(--tibetan),var(--glacier),transparent)}
+.hero-label{font-size:.8rem;letter-spacing:.3em;color:var(--text-light);margin-bottom:2rem}
+.hero h1{font-size:clamp(3rem,8vw,5.5rem);font-weight:300;letter-spacing:.15em;margin-bottom:.5rem}
+.hero .sub-en{font-size:clamp(1rem,2vw,1.4rem);letter-spacing:.3em;color:var(--text-light);margin-bottom:2rem}
+.hero .tagline{font-size:clamp(1rem,1.8vw,1.2rem);color:var(--text-light);max-width:600px;margin:0 auto 2.5rem;line-height:1.8}
+.hero-badge{display:inline-block;padding:.4rem 1.2rem;border:1px solid var(--glacier);border-radius:2rem;font-size:.75rem;letter-spacing:.1em;color:var(--text-light);margin-bottom:1.5rem}
+.hero-meta{display:flex;flex-wrap:wrap;gap:2rem;justify-content:center;margin-top:1rem}
+.hero-meta span{font-size:.85rem;color:var(--text-light);letter-spacing:.05em}
+.hero-scroll{position:absolute;bottom:2rem;left:50%;transform:translateX(-50%);font-size:.75rem;letter-spacing:.2em;color:var(--text-light);animation:float 2s ease-in-out infinite}
+.hero-scroll::after{content:'\2193';display:block;text-align:center;margin-top:.3rem;font-size:1.2rem}
+@keyframes float{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(8px)}}
+@keyframes fadeIn{0%{opacity:0}100%{opacity:1}}
+@keyframes slideUp{0%{opacity:0;transform:translateY(24px)}100%{opacity:1;transform:translateY(0)}}
+@keyframes reveal{0%{opacity:0;clip-path:inset(0 0 100% 0)}100%{opacity:1;clip-path:inset(0 0 0 0)}}
+body{opacity:0;animation:fadeIn 1s ease forwards}
+.hero{opacity:0;animation:fadeIn 1.2s ease .25s forwards}
+.hero-label{opacity:0;animation:slideUp .8s ease .5s forwards}
+.hero h1{opacity:0;animation:slideUp .8s ease .7s forwards}
+.hero .sub-en{opacity:0;animation:slideUp .8s ease .9s forwards}
+.hero-badge{opacity:0;animation:slideUp .8s ease 1.1s forwards}
+.hero .tagline{opacity:0;animation:slideUp .8s ease 1.3s forwards}
+.hero-meta{opacity:0;animation:slideUp .8s ease 1.5s forwards}
+.hero-scroll{opacity:0;animation:fadeIn .6s ease 1.8s forwards,float 2s ease-in-out 2.2s infinite}
+
+/* Nav scroll state */
+.nav.scrolled{background:linear-gradient(180deg,rgba(250,250,250,.98) 0%,rgba(245,248,252,.95) 100%);border-bottom-color:var(--glacier);box-shadow:0 1px 24px rgba(42,82,120,.06)}
+/* Char photo hover */
+.char-photo{transition:transform .5s ease,box-shadow .5s ease,cursor .5s ease}
+.char-photo:hover{transform:scale(1.05);box-shadow:0 8px 28px rgba(42,82,120,.14)}
+.char-gallery img,.poster-card,.gallery-item,.vid-item{transition:transform .5s ease,box-shadow .5s ease}
+.char-gallery img:hover{transform:scale(1.04);box-shadow:0 6px 20px rgba(42,82,120,.1)}
+.team-avatar{transition:transform .5s ease,box-shadow .5s ease}
+.team-avatar:hover{transform:scale(1.05);box-shadow:0 8px 25px rgba(42,82,120,.12)}
+/* Card hover enhancement */
+.card{transition:box-shadow .4s,transform .4s}
+.card:hover{box-shadow:0 6px 28px rgba(42,82,120,.08);transform:translateY(-1px)}
+/* Vid-item fade-in staggered */
+.vid-item{opacity:0;animation:fadeIn .5s ease forwards}
+.vid-item:nth-child(1){animation-delay:.05s}
+.vid-item:nth-child(2){animation-delay:.1s}
+.vid-item:nth-child(3){animation-delay:.15s}
+.vid-item:nth-child(4){animation-delay:.2s}
+.vid-item:nth-child(5){animation-delay:.25s}
+.vid-item:nth-child(6){animation-delay:.3s}
+/* Video play hint */
+.vid-wrap{position:relative;overflow:hidden}
+.vid-play{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:40px;height:40px;border-radius:50%;background:rgba(0,0,0,.2);border:1.5px solid rgba(255,255,255,.25);color:rgba(255,255,255,.7);display:flex;align-items:center;justify-content:center;font-size:.8rem;pointer-events:none;opacity:.7;transition:opacity .4s,transform .4s;line-height:1}
+.vid-wrap:hover .vid-play{opacity:0}
+.video-wrapper .vid-play{width:56px;height:56px;font-size:1.2rem;background:rgba(0,0,0,.25);border-width:2px}
+/* Scroll reveal */
+[data-reveal]{opacity:0;transform:translateY(28px);transition:opacity .7s cubic-bezier(.25,.46,.45,.94),transform .7s cubic-bezier(.25,.46,.45,.94)}
+[data-reveal].revealed{opacity:1;transform:translateY(0)}
+/* Poster hover */
+.poster-card:hover{transform:translateY(-2px);box-shadow:0 8px 30px rgba(42,82,120,.1)}
+/* Gallery item hover */
+.gallery-item:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(42,82,120,.08)}
+
+.card{background:var(--card-bg);border:1px solid var(--border);border-radius:4px;padding:clamp(1.5rem,2.5vw,2.5rem);transition:box-shadow .3s}
+.card:hover{box-shadow:0 4px 20px rgba(42,82,120,.06)}
+.card-num{font-size:2rem;font-weight:200;color:var(--glacier);margin-bottom:.5rem;line-height:1}
+.card h3{font-size:1.1rem;font-weight:500}
+.stat-row{display:flex;flex-wrap:wrap;gap:clamp(1.5rem,4vw,4rem);justify-content:center;text-align:center}
+.stat-item{flex:1;min-width:140px}
+.stat-num{font-size:clamp(2rem,4vw,3.2rem);font-weight:200;color:var(--tibetan);line-height:1}
+.stat-label{font-size:.85rem;color:var(--text-light);margin-top:.5rem;letter-spacing:.05em}
+.char-card{text-align:center;padding:2rem 1.5rem}
+.char-photo{width:100px;height:100px;border-radius:50%;object-fit:cover;margin:0 auto 1.2rem;background:var(--glacier)}
+.char-role{font-size:.75rem;color:var(--text-light);letter-spacing:.1em;margin-bottom:.3rem}
+.char-name{font-size:1.2rem;color:var(--tibetan);margin-bottom:.3rem}
+.char-title{font-size:.85rem;color:var(--text-light);margin-bottom:.8rem}
+.char-desc{font-size:.9rem;color:var(--text);line-height:1.7;text-align:left}
+.char-gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:.5rem;margin-top:.6rem}
+.char-gallery img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:2px;border:1px solid var(--border);transition:opacity .3s}
+.char-gallery img:hover{opacity:.85}
+.char-gallery-label{font-size:.7rem;color:var(--text-light);letter-spacing:.1em;margin-top:.8rem;margin-bottom:.3rem;text-align:left}
+.team-card{text-align:center;padding:1.5rem}
+.team-avatar{width:80px;height:80px;border-radius:50%;background:var(--glacier);margin:0 auto 1rem;display:flex;align-items:center;justify-content:center;font-size:1.5rem;color:var(--tibetan);font-weight:200}
+.team-name{font-size:1rem;color:var(--tibetan);font-weight:500}
+.team-role{font-size:.8rem;color:var(--text-light);margin-bottom:.5rem}
+.team-desc{font-size:.8rem;color:var(--text);line-height:1.6}
+.timeline{position:relative;padding-left:2rem;max-width:600px;margin:0 auto}
+.timeline::before{content:'';position:absolute;left:8px;top:0;bottom:0;width:1px;background:var(--glacier)}
+.tl-item{position:relative;padding-bottom:2.2rem}
+.tl-item::before{content:'';position:absolute;left:-2rem+4px;top:6px;width:10px;height:10px;border-radius:50%;background:var(--tibetan);border:2px solid var(--card-bg)}
+.tl-item.current::before{background:var(--tibetan);box-shadow:0 0 0 4px rgba(42,82,120,.15)}
+.tl-date{font-size:.8rem;color:var(--tibetan);letter-spacing:.05em;font-weight:500;margin-bottom:.2rem}
+.tl-text{font-size:.9rem;color:var(--text)}
+.tl-status{display:inline-block;font-size:.7rem;padding:.15rem .6rem;border-radius:2px;margin-top:.3rem}
+.tl-status.current{background:#E8EDF4;color:var(--tibetan)}
+.cta-section{text-align:center;padding:clamp(3rem,6vw,5rem) 2rem}
+.cta-section p{max-width:500px;margin:0 auto 2rem}
+.cta-btn{display:inline-block;padding:.8rem 2.5rem;background:var(--tibetan);color:#fff;border:0;border-radius:3px;font-size:.9rem;letter-spacing:.1em;cursor:pointer;transition:background .3s}
+.cta-btn:hover{background:#1a3650;color:#fff}
+.cta-btn-outline{display:inline-block;padding:.8rem 2.5rem;background:transparent;color:var(--tibetan);border:1px solid var(--tibetan);border-radius:3px;font-size:.9rem;letter-spacing:.1em;cursor:pointer;transition:all .3s;margin:.5rem}
+.cta-btn-outline:hover{background:var(--tibetan);color:#fff}
+.cta-group{display:flex;flex-wrap:wrap;justify-content:center;gap:1rem}
+.quote-block{border-left:2px solid var(--glacier);padding:1.5rem 2rem;margin:2rem 0;background:#F8FAFC}
+.quote-block p{font-style:italic;color:var(--text-light)}
+.detail-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem}
+.detail-item{padding:1rem 0;border-bottom:1px solid var(--border)}
+.detail-label{font-size:.75rem;color:var(--text-light);letter-spacing:.1em;margin-bottom:.2rem}
+.detail-value{font-size:.95rem;color:var(--text)}
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;background:linear-gradient(180deg,rgba(250,250,250,.95) 0%,rgba(250,250,250,.88) 100%);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--border);transition:transform .3s,background .4s,border-color .4s,box-shadow .4s}
+.nav-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:0 clamp(1rem,3vw,2rem);height:56px}
+.nav-logo{font-size:1rem;color:var(--tibetan);letter-spacing:.1em;font-weight:500}
+.nav-links{display:flex;gap:1.5rem;list-style:none}
+.nav-links a{font-size:.8rem;color:var(--text-light);letter-spacing:.05em;transition:color .3s}
+.nav-links a:hover{color:var(--tibetan)}
+.nav-toggle{display:none;flex-direction:column;gap:4px;cursor:pointer;padding:4px}
+.nav-toggle span{display:block;width:22px;height:1.5px;background:var(--tibetan);transition:.3s}
+footer{padding:3rem clamp(1.2rem,5vw,4rem);text-align:center;border-top:1px solid var(--border);max-width:1200px;margin:0 auto}
+footer p{font-size:.8rem;color:var(--text-light);margin:.3rem auto;max-width:none}
+.video-wrapper{position:relative;width:100%;aspect-ratio:16/9;background:#000;border-radius:4px;overflow:hidden}
+.video-wrapper video{width:100%;height:100%;object-fit:cover}
+.gallery-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.5rem}
+.vid-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:1rem}
+.vid-item{border:1px solid var(--border);border-radius:4px;overflow:hidden;transition:box-shadow .3s;background:#000}
+.vid-item:hover{box-shadow:0 4px 20px rgba(42,82,120,.06)}
+.vid-item video{width:100%;display:block;aspect-ratio:9/16;object-fit:cover}
+.vid-item .cap{padding:.5rem .8rem;background:var(--card-bg)}
+.vid-item .cap p{font-size:.75rem;color:var(--text-light);max-width:none}
+.gallery-item{border:1px solid var(--border);border-radius:4px;overflow:hidden;transition:box-shadow .3s}
+.gallery-item:hover{box-shadow:0 4px 20px rgba(42,82,120,.06)}
+.gallery-item .thumb{aspect-ratio:16/9;background:linear-gradient(135deg,#F4F8FC,#E8EDF2);display:flex;align-items:center;justify-content:center;position:relative}
+.gallery-item .thumb img{width:100%;height:100%;object-fit:cover}
+.gallery-item .caption{padding:1rem 1.2rem}
+.gallery-item .caption p{font-size:.85rem;max-width:none;color:var(--text-light)}
+.gallery-item .caption h4{font-size:.95rem;color:var(--tibetan);font-weight:500;margin-bottom:.3rem}
+.poster-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2rem}
+.poster-card{border:1px solid var(--border);border-radius:4px;overflow:hidden;transition:box-shadow .3s}
+.poster-card:hover{box-shadow:0 4px 20px rgba(42,82,120,.06)}
+.poster-card .poster-img{aspect-ratio:2/3;background:linear-gradient(135deg,#F4F8FC,#E8EDF2);display:flex;align-items:center;justify-content:center;position:relative}
+.poster-card .poster-img img{width:100%;height:100%;object-fit:cover}
+.poster-card .poster-label{padding:1rem 1.2rem;text-align:center}
+.poster-card .poster-label p{font-size:.85rem;color:var(--text-light);max-width:none}
+.poster-card .poster-label h4{font-size:.95rem;color:var(--tibetan);font-weight:500;margin-bottom:.2rem}
+@media(max-width:768px){
+  .nav-links{display:none;position:absolute;top:56px;left:0;right:0;background:rgba(250,250,250,.98);flex-direction:column;padding:1rem 2rem;gap:.8rem;border-bottom:1px solid var(--border)}
+  .nav-links.active{display:flex}
+  .nav-toggle{display:flex}
+  .grid-2,.grid-3,.grid-4{grid-template-columns:1fr}
+  .hero h1{font-size:clamp(2.2rem,10vw,3.2rem)}
+  .section{padding:2.5rem 1.2rem}
+  .stat-row{gap:1.5rem}
+  .timeline{padding-left:1.5rem}
+  .gallery-grid{grid-template-columns:1fr}
+  .poster-grid{grid-template-columns:1fr}
+}
+@media(max-width:480px){.hero-meta{gap:1rem;flex-direction:column;align-items:center}}
+@media print{.nav{display:none}.hero{min-height:auto;padding:3rem 1rem}}
+</style>
+</head>
+<body>
+
+<nav class="nav" id="navbar">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">雪线之上</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#project">关于影片</a></li>
+      <li><a href="#director">导演</a></li>
+      <li><a href="#theme">主题</a></li>
+      <li><a href="#characters">主角</a></li>
+      <li><a href="#visual">影像</a></li>
+      <li><a href="#poster">海报</a></li>
+      <li><a href="#production">拍摄</a></li>
+      <li><a href="#team">团队</a></li>
+      <li><a href="#festival">影展</a></li>
+      <li><a href="#contact">联系</a></li>
+    </ul>
+    <div class="nav-toggle" id="navToggle" onclick="toggleNav()"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+
+<section class="hero" id="hero">
+  <div class="hero-label">人文纪实纪录片 · Documentary Short</div>
+  <h1>雪线之上</h1>
+  <p class="sub-en">ABOVE THE SNOW LINE</p>
+  <div class="hero-badge">国内首部 · 未成年女性高山向导 · 双线纪实</div>
+  <p class="tagline">同一个家庭，相似的起点，未必走向同一个答案。<br>一部关于传承、突破与等待的纪实影像。</p>
+  <div class="hero-meta">
+    <span>30 min · 纪实短片</span>
+    <span>2026 — 2027</span>
+    <span>云南 · 香格里拉 · 哈巴雪山 5396m</span>
+  </div>
+  <div class="hero-scroll">向下滚动</div>
+</section>
+
+<section class="section-full" id="project">
+<div class="section">
+  <div class="section-header" data-reveal>
+    <div class="section-sub">01 · About the Film</div>
+    <h2>关于影片</h2>
+    <div class="section-divider"></div>
+    <p>国内首部聚焦未成年女性高山向导姐妹的纪实影像作品，以高考为不可逆时间锚点，记录雪山家庭在时代缝隙中的真实选择。</p>
+  </div>
+  <div class="grid-2" style="margin-bottom:3rem">
+    <div class="card"><div class="card-num">01</div><h3>国内行业空白</h3><p style="max-width:none;font-size:.9rem">高山向导长期被视为男性领域，女性从业者面临体能质疑与传统偏见。国内尚无系统记录中国女性高山向导群体的纪实影像作品。</p></div>
+    <div class="card"><div class="card-num">02</div><h3>不可复制的实时性</h3><p style="max-width:none;font-size:.9rem">2026年高考正在发生——这个时间窗口不可逆、不可重来。本片是"实时记录"而非"回顾式"纪录片，具有不可替代的即时真实感。</p></div>
+    <div class="card"><div class="card-num">03</div><h3>三重议题共振</h3><p style="max-width:none;font-size:.9rem">女性主义觉醒 + 教育公平与乡村振兴 + 户外运动产业爆发——影片站在多重社会议题的交叉点上，具备广泛的公众关注基础。</p></div>
+    <div class="card"><div class="card-num">04</div><h3>全球语境共鸣</h3><p style="max-width:none;font-size:.9rem">对标《蒙古草原天气晴》《女猎鹰人》，关于成长、劳动与选择的处境具有全球共通性，具备国际纪录片节展的选题竞争力。</p></div>
+  </div>
+  <div class="stat-row">
+    <div class="stat-item"><div class="stat-num">19岁</div><div class="stat-label">姐姐·高三·向导·从业10年</div></div>
+    <div class="stat-item"><div class="stat-num">17岁</div><div class="stat-label">妹妹·高一·向导·从业7年</div></div>
+    <div class="stat-item"><div class="stat-num">5396m</div><div class="stat-label">哈巴雪山顶峰海拔</div></div>
+    <div class="stat-item"><div class="stat-num">3000+</div><div class="stat-label">父亲登顶哈巴雪山次数</div></div>
+    <div class="stat-item"><div class="stat-num">7546m</div><div class="stat-label">姐妹登顶慕士塔格峰</div></div>
+  </div>
+</div>
+</section>
+
+<section class="section" id="director">
+  <div class="section-header" data-reveal>
+    <div class="section-sub">02 · Director</div>
+    <h2>导演创作阐述</h2>
+    <div class="section-divider"></div>
+  </div>
+  <div class="grid-2" style="align-items:start">
+    <div>
+      <p style="margin-bottom:1.2rem"><strong style="color:var(--tibetan)">向明鑫</strong> — 导演 / 总制片</p>
+      <p style="font-size:.95rem;margin-bottom:1rem">初次听闻罗琴、罗莹姐妹的故事，外界给予她们最多的标签是"励志"与"传奇"。但真正触动我的，并非这些符号化的赞誉，而是两个女孩褪去光环后、藏在日常里的真实瞬间：是高三备考的姐姐在教室里对着倒计时牌挑灯夜读的专注，是周末在小姨家时的片刻松弛与沉默；是高一在读的妹妹伏案赶作业的认真，望向山外时眼里的"懵懂与憧憬"。</p>
+      <p style="font-size:.95rem">这不是一部塑造高山向导传奇的励志片，而是以姐妹二人的成长为切口，记录一个雪山家庭在时代缝隙中关于选择、坚守与传承的人文纪实影像。</p>
+      <div class="quote-block"><p>"不拍'女性征服雪山'的传奇，只拍一个向导家庭在时代缝隙中的日常选择与沉默张力。所有价值表达藏在真实细节中，由观众在具体处境里自行判断。"</p></div>
+    </div>
+    <div>
+      <div class="card" style="text-align:center;padding:3rem 2rem">
+        <div style="width:120px;height:120px;border-radius:50%;background:var(--glacier);margin:0 auto 1.2rem;display:flex;align-items:center;justify-content:center;font-size:2.5rem;color:var(--tibetan);font-weight:200">向</div>
+        <h3 style="margin-bottom:.3rem">向明鑫</h3>
+        <p class="small" style="margin-bottom:1rem">导演 / 总制片</p>
+        <p style="font-size:.85rem;max-width:none">重庆城市科技学院 · 摄影专业<br>高海拔纪实拍摄经验<br>军旅背景 · 独立纪录片创作者</p>
+      </div>
+    </div>
+  </div>
+  <div class="quote-block" style="margin-top:2rem"><p style="font-size:.9rem"><strong>创作立场：</strong>平视 · 尊重 · 克制 —— 不俯视苦难，不仰视传奇。拒绝旁白解说，拒绝预设冲突，拒绝标签化表达。直接电影（Direct Cinema）方法论贯穿始终。</p></div>
+</section>
+
+<section class="section-full" id="theme">
+<div class="section">
+  <div class="section-header" data-reveal>
+    <div class="section-sub">03 · Theme</div>
+    <h2>影片人文主题立意</h2>
+    <div class="section-divider"></div>
+    <p>从个体故事折射时代命题，层层递进的三个叙事维度。</p>
+  </div>
+  <div style="max-width:800px;margin:0 auto">
+    <div style="background:#2A5278;border-radius:4px;padding:2rem 2.5rem;text-align:center;margin-bottom:1rem">
+      <p style="font-size:.75rem;letter-spacing:.15em;color:#D6E4F0;margin-bottom:.5rem">核心命题 CORE PROPOSITION</p>
+      <p style="font-size:clamp(1.2rem,2vw,1.5rem);color:#fff;font-weight:300;letter-spacing:.1em;line-height:1.6;max-width:none">时代缝隙中的个体选择</p>
+      <p style="font-size:.9rem;color:#D6E4F0;margin-top:.8rem;font-style:italic;max-width:none">"同一个家庭，相似的起点，未必走向同一个答案"</p>
+      <div style="display:inline-block;margin-top:.8rem;padding:.2rem 1rem;border:1px solid rgba(214,228,240,.3);border-radius:2rem;font-size:.75rem;color:#D6E4F0">女性主义内核</div>
+    </div>
+    <div style="text-align:center;margin:.5rem 0"><span style="color:var(--glacier);font-size:1.5rem">↓</span></div>
+    <div style="background:#F4F8FC;border:1px solid var(--border);border-radius:4px;padding:2rem;margin-bottom:1rem">
+      <p style="font-size:.75rem;letter-spacing:.15em;color:var(--tibetan);text-align:center;margin-bottom:1.5rem">矛盾维度 CONFLICT DIMENSIONS</p>
+      <div class="grid-3">
+        <div style="text-align:center"><p style="font-size:.9rem;color:var(--tibetan);font-weight:500;margin-bottom:.5rem">女性成长 × 职业认同</p><p style="font-size:.8rem;color:var(--text-light);max-width:none">性别壁垒的突破与困境<br>从"被质疑"到"用行动证明"<br>母亲退居后勤的二十年沉默</p></div>
+        <div style="text-align:center"><p style="font-size:.9rem;color:var(--tibetan);font-weight:500;margin-bottom:.5rem">代际传承 × 教育张力</p><p style="font-size:.8rem;color:var(--text-light);max-width:none">"走出去"与"留下来"<br>家族传统 vs 制度化上升通道<br>父亲破局 vs 母亲守护</p></div>
+        <div style="text-align:center"><p style="font-size:.9rem;color:var(--tibetan);font-weight:500;margin-bottom:.5rem">家庭责任 × 个体自由</p><p style="font-size:.8rem;color:var(--text-light);max-width:none">为家庭分担 vs 为自己而活<br>姐姐：稳定 vs 未知<br>妹妹：跟随 vs 独立</p></div>
+      </div>
+    </div>
+    <div style="text-align:center;margin:.5rem 0"><span style="color:var(--glacier);font-size:1.5rem">↓</span></div>
+    <div style="background:#fff;border:1px solid var(--border);border-radius:4px;padding:2rem">
+      <p style="font-size:.75rem;letter-spacing:.15em;color:var(--text-light);text-align:center;margin-bottom:1.5rem">表层叙事 SURFACE NARRATIVE</p>
+      <div class="grid-3">
+        <div style="text-align:center"><p style="font-size:.85rem;color:var(--tibetan);font-weight:500;margin-bottom:.3rem">双线叙事</p><p style="font-size:.8rem;color:var(--text-light);max-width:none">校园线 ↔ 雪山线<br>小姨家过渡空间</p></div>
+        <div style="text-align:center"><p style="font-size:.85rem;color:var(--tibetan);font-weight:500;margin-bottom:.3rem">高考时间轴</p><p style="font-size:.8rem;color:var(--text-light);max-width:none">5月备考→6月高考→8月录取<br>制度性时间的介入与断裂</p></div>
+        <div style="text-align:center"><p style="font-size:.85rem;color:var(--tibetan);font-weight:500;margin-bottom:.3rem">雪山职业空间</p><p style="font-size:.8rem;color:var(--text-light);max-width:none">5396m冲顶·向导日常<br>不拍传奇拍日常</p></div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="section" id="characters">
+  <div class="section-header" data-reveal>
+    <div class="section-sub">04 · Protagonists</div>
+    <h2>主角</h2>
+    <div class="section-divider"></div>
+    <p>一个家庭，两代向导，两个女儿站在不同的人生路口。</p>
+  </div>
+  <div class="grid-2">
+    <div class="card char-card" style="padding-bottom:1.5rem">
+      <img src="images/characters/luoqin_2.jpg" alt="罗琴" class="char-photo">
+      <div class="char-role">PROTAGONIST · 姐姐</div>
+      <div class="char-name">罗琴</div>
+      <div class="char-title">19岁 · 高三强基班 · 高山向导 · 国家一级运动员</div>
+      <p class="char-desc">5岁进山，9岁协助带客，16岁独立带队冲顶哈巴雪山。累计带队完成百余次高海拔攀登，零事故记录。2025年7月与妹妹登顶慕士塔格峰（7546m）。家族里首位冲刺全日制本科大学的成员。</p>
+      <p class="char-desc" style="margin-top:.5rem"><strong style="color:var(--tibetan)">人物弧光：</strong>从"为家庭分担的小助手"到"独当一面的资深向导"，在高考与职业的十字路口完成自我价值的确认。</p>
+	      <div style="margin-top:1rem;border-top:1px solid var(--border);padding-top:.8rem">
+	        <div class="char-gallery-label">生活肖像 · 3张</div>
+	        <div class="char-gallery">
+	          <img src="images/characters/luoqin_a1.jpg" alt="罗琴生活肖像1">
+	          <img src="images/characters/luoqin_a2.jpg" alt="罗琴生活肖像2">
+	          <img src="images/characters/luoqin_a3.jpg" alt="罗琴生活肖像3">
+	        </div>
+	        <div class="char-gallery-label" style="margin-top:.6rem">雪山向导 · 3张</div>
+	        <div class="char-gallery">
+	          <img src="images/characters/luoqin_b1.jpg" alt="罗琴雪山向导1">
+	          <img src="images/characters/luoqin_b2.jpg" alt="罗琴雪山向导2">
+	          <img src="images/characters/luoqin_b3.jpg" alt="罗琴雪山向导3">
+	        </div>
+	      </div>
+</div>
+    <div class="card char-card" style="padding-bottom:1.5rem">
+      <img src="images/characters/luoying_2.jpg" alt="罗莹" class="char-photo">
+      <div class="char-role">PROTAGONIST · 妹妹</div>
+      <div class="char-name">罗莹</div>
+      <div class="char-title">17岁 · 高一 · 高山向导 · 国家一级运动员</div>
+      <p class="char-desc">自幼跟随姐姐接触高山向导职业。累计带队完成百余次高海拔攀登，擅长极限环境下的团队协作与应急处置。2025年7月与姐姐登顶慕士塔格峰（7546m）。</p>
+      <p class="char-desc" style="margin-top:.5rem"><strong style="color:var(--tibetan)">人物弧光：</strong>从"跟在姐姐身后的小丫头"到"能独当一面的专业向导"，完成从跟随者到独立者的成长。</p>
+	      <div style="margin-top:1rem;border-top:1px solid var(--border);padding-top:.8rem">
+	        <div class="char-gallery-label">生活肖像 · 3张</div>
+	        <div class="char-gallery">
+	          <img src="images/characters/luoying_a1.jpg" alt="罗莹生活肖像1">
+	          <img src="images/characters/luoying_a2.jpg" alt="罗莹生活肖像2">
+	          <img src="images/characters/luoying_a3.jpg" alt="罗莹生活肖像3">
+	        </div>
+	        <div class="char-gallery-label" style="margin-top:.6rem">雪山向导 · 3张</div>
+	        <div class="char-gallery">
+	          <img src="images/characters/luoying_b1.jpg" alt="罗莹雪山向导1">
+	          <img src="images/characters/luoying_b2.jpg" alt="罗莹雪山向导2">
+	          <img src="images/characters/luoying_b3.jpg" alt="罗莹雪山向导3">
+	        </div>
+	      </div>
+</div>
+    <div class="card char-card" style="padding-bottom:1.5rem">
+      <img src="images/characters/father_1.jpg" alt="罗世勇" class="char-photo">
+      <div class="char-role">FAMILY · 父亲</div>
+      <div class="char-name">罗世勇</div>
+      <div class="char-title">50岁 · 资深高山向导 · 从业30年</div>
+      <p class="char-desc">登顶慕士塔格峰2次、哈巴雪山3000余次、玉珠峰3次、雀儿山2次、四姑娘山4次。当地打破"女性不能做高山向导"观念的先行者，以实际行动支持姐妹的职业选择。</p>
+      <p class="char-desc" style="margin-top:.5rem"><strong style="color:var(--tibetan)">叙事功能：</strong>姐妹职业道路的引路人，家庭代际关系的核心人物。</p>
+	      <div style="margin-top:1rem;border-top:1px solid var(--border);padding-top:.8rem">
+	        <div class="char-gallery-label">人物影像 · 5张</div>
+	        <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:.4rem;margin-top:.6rem">
+	          <img src="images/characters/father_1.jpg" alt="罗世勇1" style="width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:2px;border:1px solid var(--border)">
+	          <img src="images/characters/father_2.jpg" alt="罗世勇2" style="width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:2px;border:1px solid var(--border)">
+	          <img src="images/characters/father_3.jpg" alt="罗世勇3" style="width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:2px;border:1px solid var(--border)">
+	          <img src="images/characters/father_4.jpg" alt="罗世勇4" style="width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:2px;border:1px solid var(--border)">
+	          <img src="images/characters/father_5.jpg" alt="罗世勇5" style="width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:2px;border:1px solid var(--border)">
+	        </div>
+	      </div>
+</div>
+    <div class="card char-card" style="padding-bottom:1.5rem">
+      <img src="images/characters/mother_1.jpg" alt="莫顺开" class="char-photo">
+      <div class="char-role">FAMILY · 母亲</div>
+      <div class="char-name">莫顺开</div>
+      <div class="char-title">49岁 · 前高山向导 · 纳西族 · 从业20年</div>
+      <p class="char-desc">当地打破"女性不能做高山向导"的先行者之一。现负责俱乐部运营与家中务农。从雪山退居灶台——在厨房与等待之间走出的二十年。既懂雪山的危险，也懂女儿的倔强。</p>
+      <p class="char-desc" style="margin-top:.5rem"><strong style="color:var(--tibetan)">叙事功能：</strong>三代女性传承的关键纽带。她的存在让"传承"落地——不是英雄叙事，而是一个纳西族女人的日常坚守。</p>
+	      <div style="margin-top:1rem;border-top:1px solid var(--border);padding-top:.8rem">
+	        <div class="char-gallery-label">人物影像 · 3张</div>
+	        <div class="char-gallery">
+	          <img src="images/characters/mother_1.jpg" alt="莫顺开1">
+	          <img src="images/characters/mother_2.jpg" alt="莫顺开2">
+	          <img src="images/characters/mother_3.jpg" alt="莫顺开3">
+	        </div>
+	      </div>
+</div>
+  </div>
+  <div class="quote-block" style="margin-top:2rem"><p style="font-size:.9rem"><strong>三代女性的代际传承：</strong><br>第一代 莫顺开（母亲）→ 从雪山到厨房——先驱者打破偏见进场，后为家庭退居后勤<br>第二代 罗琴（姐姐）→ 从厨房回雪山——在前辈路上成长为资深向导，同时冲刺大学<br>第三代 罗莹（妹妹）→ 从雪山向远方——循着姐姐的脚步，从跟随者走向独立者</p></div>
+</section>
+
+<section class="section-full" id="visual">
+<div class="section">
+  <div class="section-header" data-reveal>
+    <div class="section-sub">05 · Visuals</div>
+    <h2>影像</h2>
+    <div class="section-divider"></div>
+    <p>哈巴雪山实地拍摄影像与日常片段。</p>
+  </div>
+  <div class="video-wrapper" style="margin-bottom:2rem"><div class="vid-wrap">
+    <video controls preload="metadata" poster="images/characters/sisters_1.jpg" class="video-fade-in">
+      <source src="https://cdn.jsdelivr.net/gh/xuexianshang/xuexianshang.github.io@main/videos/DJI_20260316085742_0127_D_compressed.mp4" type="video/mp4">
+      你的浏览器不支持视频播放，请更新浏览器。
+    </video><span class="vid-play">&#9654;</span></div>
+  </div>
+  <p class="small" style="text-align:center;max-width:none;margin-bottom:2.5rem">航拍：哈巴雪山山脉 · 2026年3月 · 拍摄设备 DJI</p>
+
+  <h3 style="text-align:center;font-weight:300;margin-bottom:1.5rem;font-size:1.1rem">雪山之上的日常</h3>
+  <div class="vid-grid" style="margin-bottom:2.5rem">
+    <div class="vid-item"><div class="vid-wrap"><video controls preload="metadata" playsinline class="video-fade-in"><source src="https://cdn.jsdelivr.net/gh/xuexianshang/xuexianshang.github.io@main/videos/daily/1fe9300d705fbf57997f5b5ff1f43604.mp4" type="video/mp4"></video><span class="vid-play">&#9654;</span></div></div>
+    <div class="vid-item"><div class="vid-wrap"><video controls preload="metadata" playsinline class="video-fade-in"><source src="https://cdn.jsdelivr.net/gh/xuexianshang/xuexianshang.github.io@main/videos/daily/28970fae5b0eaec9f8af4311e1d92392.mp4" type="video/mp4"></video><span class="vid-play">&#9654;</span></div></div>
+    <div class="vid-item"><div class="vid-wrap"><video controls preload="metadata" playsinline class="video-fade-in"><source src="https://cdn.jsdelivr.net/gh/xuexianshang/xuexianshang.github.io@main/videos/daily/36b7db06484c9e42b1eb8cce60bb6c4e.mp4" type="video/mp4"></video><span class="vid-play">&#9654;</span></div></div>
+    <div class="vid-item"><div class="vid-wrap"><video controls preload="metadata" playsinline class="video-fade-in"><source src="https://cdn.jsdelivr.net/gh/xuexianshang/xuexianshang.github.io@main/videos/daily/6c3b05f97cee30dfb233067d37399ed4.mp4" type="video/mp4"></video><span class="vid-play">&#9654;</span></div></div>
+    
+    <div class="vid-item"><div class="vid-wrap"><video controls preload="metadata" playsinline class="video-fade-in"><source src="https://cdn.jsdelivr.net/gh/xuexianshang/xuexianshang.github.io@main/videos/daily/de78e5703746ad779b9b8bcecd766add.mp4" type="video/mp4"></video><span class="vid-play">&#9654;</span></div></div>
+    
+    <div class="vid-item"><div class="vid-wrap"><video controls preload="metadata" playsinline class="video-fade-in"><source src="https://cdn.jsdelivr.net/gh/xuexianshang/xuexianshang.github.io@main/videos/daily/f13f7220366bc94c21e5e5ae6f1f8488.mp4" type="video/mp4"></video><span class="vid-play">&#9654;</span></div></div>
+
+  </div>
+
+  <h3 style="text-align:center;font-weight:300;margin-bottom:1.5rem;font-size:1.1rem">影像切片</h3>
+  <div class="gallery-grid">
+    <div class="gallery-item">
+      <div class="thumb"><img src="images/characters/sisters_2.jpg" alt="姐妹合影"></div>
+      <div class="caption"><h4>雪山上的同行者</h4><p>罗琴与罗莹在哈巴雪山攀登途中，姐妹并肩，是彼此最坚实的伙伴。</p></div>
+    </div>
+    <div class="gallery-item">
+      <div class="thumb"><img src="images/characters/luoqin_3.jpg" alt="罗琴雪山"></div>
+      <div class="caption"><h4>5396m 的日常</h4><p>姐姐罗琴在冲顶途中，向导工作的重复与疲惫，而非登顶的荣耀。</p></div>
+    </div>
+    <div class="gallery-item">
+      <div class="thumb"><img src="images/characters/luoying_3.jpg" alt="罗莹雪山"></div>
+      <div class="caption"><h4>风雪中的成长</h4><p>妹妹罗莹在高海拔环境中的坚毅神情，从跟随者到独立者的蜕变。</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="section" id="poster">
+  <div class="section-header" data-reveal>
+    <div class="section-sub">06 · Poster</div>
+    <h2>官方海报物料展示</h2>
+    <div class="section-divider"></div>
+    <p>概念海报与正式海报预览，视觉语言贯穿影片的美学方向。</p>
+  </div>
+  <div class="poster-grid">
+    	    <div class="poster-card">
+	      <div class="poster-img" style="padding:0;background:#000">
+	        <img src="images/posters/poster_concept.jpg" alt="概念海报" style="width:100%;height:auto;display:block;object-fit:contain">
+	      </div>
+	      <div class="poster-label"><h4>概念海报</h4><p>Concept Poster · 影片基调视觉探索</p></div>
+	    </div>
+    <div class="poster-card">
+      <div class="poster-img" style="background:#F4F8FC;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:2rem;text-align:center">
+        <p style="color:var(--text-light);font-size:2rem;letter-spacing:.1em">🎬</p>
+        <p style="color:var(--tibetan);font-size:1rem;font-weight:500;margin-top:.5rem">正式海报</p>
+        <p style="color:var(--text-light);font-size:.75rem;margin-top:.3rem">敬请期待</p>
+      </div>
+      <div class="poster-label"><h4>正式海报</h4><p>Official Poster · 待定稿后更新</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section-full" id="production">
+<div class="section">
+  <div class="section-header" data-reveal>
+    <div class="section-sub">07 · Production</div>
+    <h2>高海拔拍摄执行规划</h2>
+    <div class="section-divider"></div>
+    <p>三窗口期执行体系 · 安全保障 · 全流程合规</p>
+  </div>
+  <div class="grid-3" style="margin-bottom:2rem">
+    <div class="card"><div class="card-num" style="font-size:1.5rem">Ⅰ</div><h3>校园拍摄窗口</h3><p style="font-size:.85rem;max-width:none"><strong>时段：</strong>5月—6月8日<br><strong>地点：</strong>香格里拉中学 · 小姨家<br><strong>核心：</strong>高考备考纪实 · 倒计时 · 晚自习<br><strong>红线：</strong>不干扰教学秩序 · 单次≤课间/自习</p></div>
+    <div class="card"><div class="card-num" style="font-size:1.5rem">Ⅱ</div><h3>雪山拍摄窗口</h3><p style="font-size:.85rem;max-width:none"><strong>时段：</strong>6月9日—8月<br><strong>地点：</strong>哈巴村 → BC → C1 → 5396m冲顶<br><strong>核心：</strong>★ 冲顶实录 · 暑假带队季跟拍<br><strong>红线：</strong>严格限定高考后 · 持证向导陪同</p></div>
+    <div class="card"><div class="card-num" style="font-size:1.5rem">Ⅲ</div><h3>落点补拍窗口</h3><p style="font-size:.85rem;max-width:none"><strong>时段：</strong>8月—9月<br><strong>地点：</strong>哈巴村 · 香格里拉 · 大学校园<br><strong>核心：</strong>录取通知书 · 姐姐入学 · 空镜补拍<br><strong>原则：</strong>不预设"圆满/遗憾" · 真实即为落点</p></div>
+  </div>
+  <div class="detail-grid" style="margin-bottom:2rem">
+    <div class="detail-item"><div class="detail-label">影片时长</div><div class="detail-value">30分钟 · 纪实短片</div></div>
+    <div class="detail-item"><div class="detail-label">总预算</div><div class="detail-value">¥141,289</div></div>
+    <div class="detail-item"><div class="detail-label">拍摄周期</div><div class="detail-value">90天（2026年5月—9月）</div></div>
+    <div class="detail-item"><div class="detail-label">后期周期</div><div class="detail-value">2026年9月—2027年8月</div></div>
+    <div class="detail-item"><div class="detail-label">核心设备</div><div class="detail-value">Sony FX3 双机 + 南光灯具 + 专业录音</div></div>
+    <div class="detail-item"><div class="detail-label">团队规模</div><div class="detail-value">7人核心团队（中英美三地协作）</div></div>
+    <div class="detail-item"><div class="detail-label">素材备份</div><div class="detail-value">3-2-1制度：当日素材当日双硬盘备份</div></div>
+    <div class="detail-item"><div class="detail-label">安全保障</div><div class="detail-value">持证向导全程陪同 · 每日血氧监测 · 导演一票否决</div></div>
+    <div class="detail-item"><div class="detail-label">法律合规</div><div class="detail-value">全部肖像权授权 · 未成年人监护同意 · 校方书面许可</div></div>
+    <div class="detail-item"><div class="detail-label">对标美学</div><div class="detail-value">《蒙古草原天气晴》原生纪实 · Direct Cinema</div></div>
+  </div>
+  <div class="quote-block" style="background:#FFF8F4;border-left-color:#D6E4F0"><p style="font-size:.85rem;max-width:none"><strong>⚠ 零容忍拍摄红线</strong><br>① 严禁高考前出现主角在雪山的任何实拍画面<br>② 5396m冲顶实拍严格限定在高考结束后，所有素材标注精确时间字幕<br>③ 校园拍摄不影响教学秩序，不进入教学核心区、不摆拍、不引导</p></div>
+</div>
+</section>
+
+<section class="section" id="team">
+  <div class="section-header" data-reveal>
+    <div class="section-sub">08 · Team</div>
+    <h2>主创团队介绍</h2>
+    <div class="section-divider"></div>
+  </div>
+  <div class="grid-4">
+    <div class="card team-card"><div class="team-avatar">向</div><div class="team-name">向明鑫</div><div class="team-role">导演 / 总制片</div><p class="team-desc">全流程把控 · 叙事决策<br>高海拔拍摄经验 · 军旅背景</p></div>
+    <div class="card team-card"><div class="team-avatar">柏</div><div class="team-name">李柏秋</div><div class="team-role">监制</div><p class="team-desc">行业资深制片人<br>项目全程指导 · 资源对接</p></div>
+    <div class="card team-card"><div class="team-avatar">雨</div><div class="team-name">肖雨洁</div><div class="team-role">编导</div><p class="team-desc">纪录片叙事结构设计<br>采访框架 · 场记</p></div>
+    <div class="card team-card"><div class="team-avatar">紫</div><div class="team-name">陆紫莹</div><div class="team-role">执行制片（英国）</div><p class="team-desc">海外发行对接<br>国际电影节策略</p></div>
+    <div class="card team-card"><div class="team-avatar">海</div><div class="team-name">陈海岳</div><div class="team-role">摄影（香港）</div><p class="team-desc">纪实影像掌机<br>双机位方案执行</p></div>
+    <div class="card team-card"><div class="team-avatar">悦</div><div class="team-name">高嘉悦</div><div class="team-role">后期配乐（美国）</div><p class="team-desc">原创配乐创作<br>声音设计把控</p></div>
+    <div class="card team-card"><div class="team-avatar">峰</div><div class="team-name">杨旭峰</div><div class="team-role">录音指导（云南）</div><p class="team-desc">现场同期声录制<br>环境音采集</p></div>
+  </div>
+  <div style="text-align:center;margin-top:2rem;padding:1.5rem;background:#F4F8FC;border-radius:4px"><p style="font-size:.9rem;max-width:none"><strong>团队优势：</strong>稀缺高海拔拍摄能力 · 独家信任关系 · 跨地域中英美协作 · 全流程工业闭环</p><p style="font-size:.8rem;color:var(--text-light);margin-top:.5rem;max-width:none">特别鸣谢：云南勇攀探险活动俱乐部（专业登山服务支持）</p></div>
+</section>
+
+<section class="section-full" id="festival">
+<div class="section">
+  <div class="section-header" data-reveal>
+    <div class="section-sub">09 · Festival Roadmap</div>
+    <h2>影展申报投递进度</h2>
+    <div class="section-divider"></div>
+    <p>项目全周期规划，从拍摄执行到国际节展投递。</p>
+  </div>
+  <div class="timeline">
+    <div class="tl-item current"><div class="tl-date">2026年5月 — 9月</div><div class="tl-text"><strong>主拍摄期</strong> · 三窗口执行体系：校园线→雪山线→落点补拍</div><span class="tl-status current">进行中</span></div>
+    <div class="tl-item"><div class="tl-date">2026年10月 — 12月</div><div class="tl-text"><strong>粗剪完成</strong> · 内部试映 · 叙事结构调整</div></div>
+    <div class="tl-item"><div class="tl-date">2027年1月 — 3月</div><div class="tl-text"><strong>精剪 &amp; 调色</strong> · 声效设计 · 原创配乐制作</div></div>
+    <div class="tl-item"><div class="tl-date">2027年4月 — 6月</div><div class="tl-text"><strong>节展投递窗口</strong> · FIRST青年电影展 · 山一国际女性影展 · 广州纪录片节</div></div>
+    <div class="tl-item"><div class="tl-date">2027年7月 — 12月</div><div class="tl-text"><strong>国际节展投递</strong> · IDFA · 山形 · 香港亚洲电影节</div></div>
+    <div class="tl-item"><div class="tl-date">2028年</div><div class="tl-text"><strong>平台上线</strong> · B站首发 · 高校巡展 · 品牌联合传播</div></div>
+  </div>
+  <div style="margin-top:3rem;text-align:center"><p style="font-size:.85rem;color:var(--text-light);max-width:none">目标节展：FIRST青年电影展 · IDFA阿姆斯特丹 · 山形国际纪录片影展 · 广州国际纪录片节 · 山一国际女性影展</p></div>
+</div>
+</section>
+
+<section class="section" id="contact">
+  <div class="section-header" data-reveal>
+    <div class="section-sub">10 · Contact</div>
+    <h2>发行商务合作</h2>
+    <div class="section-divider"></div>
+  </div>
+  <div class="cta-section" style="padding-top:0" data-reveal>
+    <p>期待与您共同推动中国女性纪实影像走向更广阔的平台。<br>欢迎各大电影节展单元、发行机构、品牌伙伴、联合出品方与团队取得联系。</p>
+    <div class="cta-group" style="margin-top:2rem">
+      <a href="mailto:19507173502@163.com" class="cta-btn">发送邮件</a>
+      <a href="tel:19507173502" class="cta-btn-outline">致电联系</a>
+    </div>
+    <p style="margin-top:2rem;font-size:.85rem;color:var(--text-light);max-width:none">项目负责人/总制片：向明鑫 &nbsp;|&nbsp; 电话：19507173502 &nbsp;|&nbsp; 邮箱：19507173502@163.com<br>院校单位：重庆城市科技学院 &nbsp;|&nbsp; 特别鸣谢：云南勇攀探险活动俱乐部（专业登山服务支持）</p>
+  </div>
+</section>
+
+<footer data-reveal>
+  <p style="font-size:.8rem;letter-spacing:.1em;color:var(--tibetan);margin-bottom:.3rem">《雪线之上》 Above the Snow Line</p>
+  <p>© 2026 向明鑫 &amp; 创作团队 版权所有 | 人文纪实纪录片 · 制作中</p>
+</footer>
+
+<script>
+function toggleNav(){document.getElementById('navLinks').classList.toggle('active')}
+document.querySelectorAll('.nav-links a').forEach(function(a){a.addEventListener('click',function(){document.getElementById('navLinks').classList.remove('active')})})
+// Nav scroll: hide/show + scrolled state
+var ls=0;var navbar=document.getElementById('navbar')
+window.addEventListener('scroll',function(){var c=window.scrollY
+if(c>ls&&c>80){navbar.style.transform='translateY(-100%)'}else{navbar.style.transform='translateY(0)'}
+navbar.classList.toggle('scrolled',c>60);ls=c},{passive:true})
+// Scroll reveal
+var obs=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('revealed');obs.unobserve(e.target)}})},{threshold:.12})
+document.querySelectorAll('[data-reveal]').forEach(function(el){obs.observe(el)})
+</script>
+</body>
+</html>

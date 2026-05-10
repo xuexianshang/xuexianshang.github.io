@@ -1,4 +1,6 @@
 :HL["/_next/static/chunks/0i_..w6hm0emc.css","style"]
 :HL["/_next/static/chunks/03e7r.s2r08ql.css","style"]
 :HL["/_next/static/chunks/0q2k6_7tpd9wl.css","style"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"/_not-found","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"WA67N4OQlDM-qAZDSQyY-"}
+:HL["https://cdn.jsdelivr.net/gh/xuexianshang/xuexianshang.github.io@main/images/characters/luoqin_a1.jpg","image"]
+:HL["https://cdn.jsdelivr.net/gh/xuexianshang/xuexianshang.github.io@main/images/posters/poster_concept.jpg","image"]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"/_not-found","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"aMsTft1DW2Bfm1-WTTg_6"}

@@ -1,1 +1,27 @@
-__CSS__
+/* 雪线之上 站点覆盖样式 2026-07 */
+
+/* 顶部导航：首屏压暗 + 白字（滚动后自动恢复原浅底深字） */
+nav.bg-transparent{background:linear-gradient(to bottom,rgba(26,29,33,.6),rgba(26,29,33,0))!important}
+nav.bg-transparent a{color:#fff!important;text-shadow:0 1px 8px rgba(0,0,0,.4)}
+nav.bg-transparent a:hover{color:rgba(255,255,255,.72)!important}
+nav.bg-transparent button span{background-color:#fff!important}
+
+/* Hero 区白色小字提亮度 */
+.text-white\/40{color:rgba(255,255,255,.78)!important;text-shadow:0 1px 8px rgba(0,0,0,.4)}
+a[href="/press-kit"]{color:rgba(255,255,255,.85)!important;text-shadow:0 1px 8px rgba(0,0,0,.5)}
+
+/* 正文灰加深一档，提升可读性 */
+.text-\[\#8A8D8A\]{color:#6E716E!important}
+
+/* 压缩过大的留白节奏（保留克制感，去掉空旷感） */
+.py-\[12vh\]{padding-top:8vh!important;padding-bottom:8vh!important}
+.py-\[10vh\]{padding-top:7vh!important;padding-bottom:7vh!important}
+@media (min-width:768px){
+.md\:h-\[45vh\]{height:18vh!important}
+.md\:h-\[55vh\]{height:20vh!important}
+.md\:h-\[30vh\]{height:14vh!important}
+.md\:h-\[65vh\]{height:24vh!important}
+.md\:h-\[60vh\]{height:22vh!important}
+.md\:py-\[20vh\]{padding-top:12vh!important;padding-bottom:12vh!important}
+.md\:py-\[16vh\]{padding-top:10vh!important;padding-bottom:10vh!important}
+}
